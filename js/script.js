@@ -272,3 +272,57 @@ document.write("La cuenta da: " + datoR);
 var dato6 = dato4.toString();
 var dato7 = dato5.toString();
 document.write("<br><br>Los datos ingresados para la suma fueron el " + dato6 + " y se le sumo un " + dato7 + " . Dando como resultado " + datoR);
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+//Ventana de ingreso de datos emergente
+console.log("______________________________________________________________");
+console.log("\n\nLos objetos:\n\n");
+
+//forma 1:
+//const objeto = new Object(); //Objeto "generico" vacio
+
+//forma 2:
+//const objeto = {}; // Esto es un objeto vacio, forma aconsejable de crear objetos
+
+//Declaracion del objeto
+const persona = {
+    nombre: "Juan",
+    apellido: "perez",
+    edad: 35,
+};
+
+console.log("Datos de la persona:" + "\nNombre= " + persona.nombre + "\nApellido= " + persona.apellido + "\nEdad= " + persona.edad);
+
+const vehiculo = {
+    tipo: "automovil",
+    marca: "Renault",
+    modelo: "Duster",
+    año_fabricacion: "2014",
+    color: "marron",
+};
+
+console.log(persona.nombre + " tiene un " + vehiculo.tipo + " de la marca " + vehiculo.marca + " modelo " + vehiculo.modelo + " fabricado el año " + vehiculo.año_fabricacion + " y es de color " + vehiculo.color + ".");
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+//Ventana de ingreso de datos emergente
+console.log("______________________________________________________________");
+console.log("\n\nMetodos matematicos:\n\n");
+
+console.log(Math.abs(-5));
+console.log(Math.sign(-5));
+console.log(Math.exp(1));
+console.log(Math.expm1(1));
+console.log(Math.max(1, 40, 5, 15));
+console.log(Math.min(5, 10, -2, 0));
+console.log(Math.pow(2, 10));
+console.log(Math.sqrt(2));
+console.log(Math.cbrt(2));
+console.log(Math.imul(0xffffffff, 7));
+
+const x = 1;
+"0".repeat(Math.clz32(x)) + x.toString(2);
+console.log(x);
